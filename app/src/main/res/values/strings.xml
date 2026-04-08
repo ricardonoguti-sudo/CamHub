@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CamHub</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Configurações</string>
+    <string name="back">Voltar</string>
+    <string name="save_reconnect">Salvar e reconectar</string>
+
+    <!-- Settings sections -->
+    <string name="section_dvr">DVR / HIKVISION</string>
+    <string name="section_klipper">KLIPPER / MOONRAKER</string>
+    <string name="section_url_preview">PREVIEW DAS URLs</string>
+
+    <!-- DVR fields -->
+    <string name="ip_address">Endereço IP</string>
+    <string name="port">Porta</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="use_substream">Usar substream (menor qualidade)</string>
+    <string name="substream_desc">Substream: menor resolução, menor uso de rede.</string>
+    <string name="mainstream_desc">Main stream: alta resolução, maior uso de rede.</string>
+    <string name="restore_defaults">Restaurar padrões DVR</string>
+    <string name="restore_defaults_confirm">Restaurar todas as configurações do DVR para os valores padrão?</string>
+    <string name="restore">Restaurar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Klipper fields -->
+    <string name="klipper_ip">IP do Klipper</string>
+    <string name="moonraker_port">Porta Moonraker</string>
+    <string name="camera_auto_detect">Detectar câmera automaticamente</string>
+    <string name="camera_custom_url">URL personalizada da câmera</string>
+
+    <!-- Validation errors -->
+    <string name="fill_all_fields">Preencha todos os campos obrigatórios</string>
+    <string name="invalid_port">Porta inválida</string>
+    <string name="error_enter_klipper_ip">Informe o IP do Klipper</string>
+    <string name="error_enter_camera_url">Informe a URL da câmera</string>
+
+    <!-- Camera labels -->
+    <string name="camera_main">Câmera principal</string>
+    <string name="camera_side_1">Câmera lateral 1</string>
+    <string name="camera_side_2">Câmera lateral 2</string>
+    <string name="camera_side_3">Câmera lateral 3</string>
+    <string name="camera_side_4">Câmera lateral 4</string>
+
+    <!-- Status messages -->
+    <string name="status_connecting">Conectando…</string>
+    <string name="status_buffering">Buffering…</string>
+    <string name="status_error">Erro de conexão</string>
+    <string name="status_stopped">Parado</string>
+    <string name="status_camera_not_found">Câmera não encontrada</string>
+    <string name="status_shutting_down">Klipper desligando…</string>
+
+    <!-- Buttons -->
+    <string name="mute">Mudo</string>
+    <string name="reload">Recarregar</string>
+    <string name="settings">Configurações</string>
+    <string name="shutdown_klipper">Desligar Klipper</string>
+    <string name="shutdown_title">Desligar Klipper</string>
+    <string name="shutdown_message">Tem certeza que deseja desligar o Klipper?</string>
+    <string name="shutdown_confirm">Desligar</string>
+    <string name="shutdown_failed">Falha ao desligar. Verifique a conexão.</string>
+</resources>

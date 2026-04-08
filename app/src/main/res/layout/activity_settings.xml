@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <!-- Header bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1E1E1E"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="#FFFFFF"
+            android:contentDescription="@string/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/settings_title"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ══════════════════════════════════════════
+                 SECTION: DVR (Hikvision)
+            ═════════════════════════════════════════════ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_dvr"
+                android:textColor="#4FC3F7"
+                android:textSize="11sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="10dp" />
+
+            <!-- DVR Host -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dvrHostLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ip_address">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dvrHostInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="textUri"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DVR Port -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dvrPortLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/port">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dvrPortInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="number"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DVR Username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dvrUserLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/username">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dvrUserInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="text"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DVR Password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dvrPasswordLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/password"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dvrPasswordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Substream toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/use_substream"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/substreamSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/substreamDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <!-- DVR URL preview -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_url_preview"
+                android:textColor="#4FC3F7"
+                android:textSize="11sp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/dvrUrlPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E1E1E"
+                android:padding="10dp"
+                android:textColor="#888888"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+            <!-- Restore defaults -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/restoreDefaultsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/restore_defaults"
+                android:textColor="#4FC3F7"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="#4FC3F7" />
+
+            <!-- ══════════════════════════════════════════
+                 DIVIDER
+            ═════════════════════════════════════════════ -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#333333"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ══════════════════════════════════════════
+                 SECTION: Klipper / Moonraker
+            ═════════════════════════════════════════════ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_klipper"
+                android:textColor="#4FC3F7"
+                android:textSize="11sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Klipper IP -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/klipperIpLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/klipper_ip">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/klipperIpInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="textUri"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Moonraker port -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/klipperPortLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/moonraker_port">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/klipperPortInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="number"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Camera auto-detect toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/camera_auto_detect"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/cameraAutoDetectSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Auto-detect URL list (shown when auto-detect is ON) -->
+            <TextView
+                android:id="@+id/klipperAutoUrls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#1E1E1E"
+                android:padding="10dp"
+                android:textColor="#888888"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:visibility="visible" />
+
+            <!-- Custom URL (shown when auto-detect is OFF) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/klipperCameraUrlLayout"
+                style="@style/DarkTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/camera_custom_url"
+                android:visibility="gone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/klipperCameraUrlInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="textUri"
+                    android:imeOptions="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ══════════════════════════════════════════
+                 SAVE BUTTON
+            ═════════════════════════════════════════════ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/save_reconnect"
+                android:textColor="#000000"
+                app:backgroundTint="#4FC3F7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_bg_button_circle.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/bg_button_circle.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_ic_refresh.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/ic_refresh.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_ic_volume_up.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/ic_volume_up.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_ic_volume_off.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/ic_volume_off.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.camhub.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_ic_power.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/ic_power.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/layout_activity_settings.xml.flat",
+        "source": "com.camhub.app-main-37:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.camhub.app-debug-35:/drawable_ic_settings.xml.flat",
+        "source": "com.camhub.app-main-37:/drawable/ic_settings.xml"
+    }
+]

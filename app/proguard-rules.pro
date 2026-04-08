@@ -1,0 +1,2 @@
+-keep class org.videolan.** { *; }
+-keep class com.google.gson.** { *; }

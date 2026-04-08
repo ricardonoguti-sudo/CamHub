@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main dashboard theme: no action bar, full screen dark -->
+    <style name="Theme.CamHub" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">#0288D1</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSurface">@color/dark_background</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <!-- Settings theme: inherits CamHub but with a visible action bar area -->
+    <style name="Theme.CamHub.Settings" parent="Theme.CamHub">
+        <item name="android:windowBackground">@color/dark_background</item>
+    </style>
+
+    <!-- Dark text input fields style (used in activity_settings.xml) -->
+    <style name="DarkTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/card_background</item>
+        <item name="boxStrokeColor">@color/section_header_color</item>
+        <item name="hintTextColor">@color/section_header_color</item>
+        <item name="android:textColorHint">@color/section_header_color</item>
+    </style>
+
+</resources>

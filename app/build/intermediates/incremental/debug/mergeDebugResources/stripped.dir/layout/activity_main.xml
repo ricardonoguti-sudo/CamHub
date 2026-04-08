@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SIDE PANEL — 4 small cameras, 25% width, right edge
+         Declared first so mainSlot can constrain its end to this view's start.
+    ═══════════════════════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/sidePanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#0A0A0A"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.25">
+
+        <!-- Side Slot 1 ──────────────────────────────────────────────────── -->
+        <FrameLayout
+            android:id="@+id/sideSlot1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="1dp"
+            android:background="#000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <org.videolan.libvlc.util.VLCVideoLayout
+                android:id="@+id/side1VlcLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/side1ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:contentDescription="@string/camera_side_1" />
+
+            <LinearLayout
+                android:id="@+id/side1StatusOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#99000000"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/side1Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#66000000"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </FrameLayout>
+
+        <!-- Side Slot 2 ──────────────────────────────────────────────────── -->
+        <FrameLayout
+            android:id="@+id/sideSlot2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="1dp"
+            android:background="#000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <org.videolan.libvlc.util.VLCVideoLayout
+                android:id="@+id/side2VlcLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/side2ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:contentDescription="@string/camera_side_2" />
+
+            <LinearLayout
+                android:id="@+id/side2StatusOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#99000000"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/side2Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#66000000"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </FrameLayout>
+
+        <!-- Side Slot 3 ──────────────────────────────────────────────────── -->
+        <FrameLayout
+            android:id="@+id/sideSlot3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="1dp"
+            android:background="#000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <org.videolan.libvlc.util.VLCVideoLayout
+                android:id="@+id/side3VlcLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/side3ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:contentDescription="@string/camera_side_3" />
+
+            <LinearLayout
+                android:id="@+id/side3StatusOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#99000000"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/side3Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#66000000"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </FrameLayout>
+
+        <!-- Side Slot 4 ──────────────────────────────────────────────────── -->
+        <FrameLayout
+            android:id="@+id/sideSlot4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <org.videolan.libvlc.util.VLCVideoLayout
+                android:id="@+id/side4VlcLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/side4ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:contentDescription="@string/camera_side_4" />
+
+            <LinearLayout
+                android:id="@+id/side4StatusOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#99000000"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/side4Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#66000000"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         MAIN SLOT — large camera view, fills the remaining 75%
+    ═══════════════════════════════════════════════════════════════════════════ -->
+    <FrameLayout
+        android:id="@+id/mainSlot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sidePanel">
+
+        <!-- RTSP surface -->
+        <org.videolan.libvlc.util.VLCVideoLayout
+            android:id="@+id/mainVlcLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- MJPEG surface (Klipper camera) -->
+        <ImageView
+            android:id="@+id/mainImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:contentDescription="@string/camera_main" />
+
+        <!-- Status overlay: shown while connecting / on error -->
+        <LinearLayout
+            android:id="@+id/mainStatusOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#AA000000"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/mainProgressSpinner"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/mainStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/status_connecting"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Camera name label — top-left -->
+        <TextView
+            android:id="@+id/mainCameraLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"
+            android:background="#55000000"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+        <!-- Mute + Reload controls — bottom-right, only for RTSP cameras -->
+        <LinearLayout
+            android:id="@+id/mainControlsBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/mainMuteButton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_button_circle"
+                android:src="@drawable/ic_volume_off"
+                android:tint="#FFFFFF"
+                android:contentDescription="@string/mute" />
+
+            <ImageButton
+                android:id="@+id/mainReloadButton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_button_circle"
+                android:src="@drawable/ic_refresh"
+                android:tint="#FFFFFF"
+                android:contentDescription="@string/reload" />
+        </LinearLayout>
+
+        <!-- ── Klipper print-stats bar (bottom strip, only when Klipper is main) ── -->
+        <LinearLayout
+            android:id="@+id/klipperStatsBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="#CC000000"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <!-- Progress % -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRESSO"
+                    android:textColor="#AAAAAA"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/klipperProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="0%" />
+            </LinearLayout>
+
+            <View android:layout_width="1dp" android:layout_height="32dp"
+                android:background="#444444" android:layout_marginHorizontal="8dp" />
+
+            <!-- Elapsed -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DECORRIDO"
+                    android:textColor="#AAAAAA"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/klipperElapsedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4FC3F7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="--:--" />
+            </LinearLayout>
+
+            <View android:layout_width="1dp" android:layout_height="32dp"
+                android:background="#444444" android:layout_marginHorizontal="8dp" />
+
+            <!-- Slicer estimated -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FATIADOR"
+                    android:textColor="#AAAAAA"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/klipperSlicerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#81C784"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="--:--" />
+            </LinearLayout>
+
+            <View android:layout_width="1dp" android:layout_height="32dp"
+                android:background="#444444" android:layout_marginHorizontal="8dp" />
+
+            <!-- Remaining -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESTANTE"
+                    android:textColor="#AAAAAA"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/klipperRemainingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFB74D"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="--:--" />
+            </LinearLayout>
+
+            <View android:layout_width="1dp" android:layout_height="32dp"
+                android:background="#444444" android:layout_marginHorizontal="8dp" />
+
+            <!-- Filename -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARQUIVO"
+                    android:textColor="#AAAAAA"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/klipperFilenameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#CCCCCC"
+                    android:textSize="11sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Klipper progress bar — very bottom edge -->
+        <ProgressBar
+            android:id="@+id/klipperProgressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            android:progressTint="#4FC3F7"
+            android:max="1000"
+            android:progress="0"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         GLOBAL BUTTONS — always on top-right of the full screen
+    ═══════════════════════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Power button: shown only when Klipper is in the main slot -->
+        <ImageButton
+            android:id="@+id/btnPower"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_button_circle"
+            android:src="@drawable/ic_power"
+            android:tint="#FFFFFF"
+            android:visibility="gone"
+            android:contentDescription="@string/shutdown_klipper" />
+
+        <!-- Settings button: always visible -->
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button_circle"
+            android:src="@drawable/ic_settings"
+            android:tint="#FFFFFF"
+            android:contentDescription="@string/settings" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

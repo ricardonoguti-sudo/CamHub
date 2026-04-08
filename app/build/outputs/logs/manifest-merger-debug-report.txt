@@ -1,0 +1,336 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:2:1-33:12
+MERGED from [androidx.databinding:viewbinding:8.13.2] /Users/ricardonoguti/.gradle/caches/8.13/transforms/f2fa2aa24526562011a97205fbe7bdbb/transformed/viewbinding-8.13.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.11.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b8f5b2f371d5d36692779c47b499b85/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ricardonoguti/.gradle/caches/8.13/transforms/31e3047ed163c59268e41ab95ce483f9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b95912d9776760d70335bb41a4a6aeb1/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/06e806dcdb528698d2685ac186287576/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [org.videolan.android:libvlc-all:3.6.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/6d156d31a40ebe3aef77852d01335291/transformed/libvlc-all-3.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d24e7d24ab86209dc73da7aa3d459842/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/67ca442fdf5413ce79cf125649ce0079/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/36951447bfa48328faf34fe9348e71c1/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/ricardonoguti/.gradle/caches/8.13/transforms/99be5716d118492304b08b5c045c14a3/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b9bb34ce675a5a38ea6bc1eacabf3575/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/28530cf5387dc29e70e702011b4de151/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/0fa6d6c5183255031ae41b79c2da3136/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b187733bc254601c820c2f00d2504b65/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/a75bb9805d2cc9b0dac575be2f856668/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/91d322857bb048d4b1676b2f690e8559/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/f950de7941e3df729cf28e368714f0f4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/ae70bb7dc42cce7fe9cb68f7ba52fd4c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/1155d97a078dd9f42a4fa957a5fbcaaf/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/45bb3245f36529be54753bda919ca28a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/bb32cd6f029ec2a6dcb5bebe94995d1e/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/1b627e48b583a3b0a361adffdd89ba5a/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/4907c86d2f1ffd2c858322b456cf0a73/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/16439da9b8ad07db32ca35e305a85058/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/bbd1e1ad9df3512fcb6f06b8845fd13c/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/3cb6b785ba1f0a11aea00ae42836ee62/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/55c35c1c5467fa6912766dde83674216/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/fa490330bac58faa14c18a87dd6eb5af/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c8393de459404bb30cbc84c5a1444e2a/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/64f430808489d931bbfa529be9de8255/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/36d8d29d9c54daf2e1360dc1baf6cea0/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b7c46822fcdca9270fc3416ae86459f/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/265681d88d51677160c8467c604eb1f8/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/9c4aea3bfbbbefd31ad2d70f88836526/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/16d5b33de703c691590baee6ffa11e2b/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/783cb1450d7cf79abf5159e390167ce3/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/2b1e1ab9f9c71ab55c777735bd96c18e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/84533c09f17d787063b893b0824fb0a7/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/17df2a074037210a4362c3b5a39ab403/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c97f4701bc0b9a238dae9d218626ea1b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/23f5682709187a2f348a5bbcad97f0ed/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/60917451e62cebbd3017652339de0d20/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/485b1c76617eb6e0cda217fb644a9c7c/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5fca54221f375bc09ee5afc10b11f5c2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c905ed89dd4797141b5793e7bef1306b/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/2a75b08938ad4d59d29d7a5f9d6ea469/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:5:22-76
+application
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:7:5-31:19
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:7:5-31:19
+MERGED from [com.google.android.material:material:1.11.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b8f5b2f371d5d36692779c47b499b85/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b8f5b2f371d5d36692779c47b499b85/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ricardonoguti/.gradle/caches/8.13/transforms/31e3047ed163c59268e41ab95ce483f9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ricardonoguti/.gradle/caches/8.13/transforms/31e3047ed163c59268e41ab95ce483f9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c97f4701bc0b9a238dae9d218626ea1b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c97f4701bc0b9a238dae9d218626ea1b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:9:9-41
+	android:allowBackup
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:8:9-36
+	android:theme
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:10:9-44
+	android:usesCleartextTraffic
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:11:9-44
+activity#com.camhub.MainActivity
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:13:9-23:20
+	android:screenOrientation
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:16:13-50
+	android:windowSoftInputMode
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:18:13-56
+	android:exported
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:15:13-36
+	android:configChanges
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:17:13-74
+	android:name
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:14:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.camhub.SettingsActivity
+ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:25:9-29:58
+	android:screenOrientation
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:28:13-50
+	android:windowSoftInputMode
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:29:13-55
+	android:exported
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml:26:13-45
+uses-sdk
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.13.2] /Users/ricardonoguti/.gradle/caches/8.13/transforms/f2fa2aa24526562011a97205fbe7bdbb/transformed/viewbinding-8.13.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.13.2] /Users/ricardonoguti/.gradle/caches/8.13/transforms/f2fa2aa24526562011a97205fbe7bdbb/transformed/viewbinding-8.13.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b8f5b2f371d5d36692779c47b499b85/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b8f5b2f371d5d36692779c47b499b85/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ricardonoguti/.gradle/caches/8.13/transforms/31e3047ed163c59268e41ab95ce483f9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ricardonoguti/.gradle/caches/8.13/transforms/31e3047ed163c59268e41ab95ce483f9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b95912d9776760d70335bb41a4a6aeb1/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b95912d9776760d70335bb41a4a6aeb1/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/06e806dcdb528698d2685ac186287576/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/06e806dcdb528698d2685ac186287576/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [org.videolan.android:libvlc-all:3.6.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/6d156d31a40ebe3aef77852d01335291/transformed/libvlc-all-3.6.0/AndroidManifest.xml:7:5-44
+MERGED from [org.videolan.android:libvlc-all:3.6.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/6d156d31a40ebe3aef77852d01335291/transformed/libvlc-all-3.6.0/AndroidManifest.xml:7:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d24e7d24ab86209dc73da7aa3d459842/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d24e7d24ab86209dc73da7aa3d459842/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/67ca442fdf5413ce79cf125649ce0079/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/67ca442fdf5413ce79cf125649ce0079/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/36951447bfa48328faf34fe9348e71c1/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/36951447bfa48328faf34fe9348e71c1/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/ricardonoguti/.gradle/caches/8.13/transforms/99be5716d118492304b08b5c045c14a3/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/ricardonoguti/.gradle/caches/8.13/transforms/99be5716d118492304b08b5c045c14a3/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b9bb34ce675a5a38ea6bc1eacabf3575/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b9bb34ce675a5a38ea6bc1eacabf3575/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/28530cf5387dc29e70e702011b4de151/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/28530cf5387dc29e70e702011b4de151/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/0fa6d6c5183255031ae41b79c2da3136/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/0fa6d6c5183255031ae41b79c2da3136/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b187733bc254601c820c2f00d2504b65/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b187733bc254601c820c2f00d2504b65/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/a75bb9805d2cc9b0dac575be2f856668/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/a75bb9805d2cc9b0dac575be2f856668/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/91d322857bb048d4b1676b2f690e8559/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/91d322857bb048d4b1676b2f690e8559/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/f950de7941e3df729cf28e368714f0f4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/f950de7941e3df729cf28e368714f0f4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/ae70bb7dc42cce7fe9cb68f7ba52fd4c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/ae70bb7dc42cce7fe9cb68f7ba52fd4c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/1155d97a078dd9f42a4fa957a5fbcaaf/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/1155d97a078dd9f42a4fa957a5fbcaaf/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/45bb3245f36529be54753bda919ca28a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/45bb3245f36529be54753bda919ca28a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/bb32cd6f029ec2a6dcb5bebe94995d1e/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/bb32cd6f029ec2a6dcb5bebe94995d1e/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/1b627e48b583a3b0a361adffdd89ba5a/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/1b627e48b583a3b0a361adffdd89ba5a/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/4907c86d2f1ffd2c858322b456cf0a73/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/4907c86d2f1ffd2c858322b456cf0a73/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/16439da9b8ad07db32ca35e305a85058/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/16439da9b8ad07db32ca35e305a85058/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/bbd1e1ad9df3512fcb6f06b8845fd13c/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/bbd1e1ad9df3512fcb6f06b8845fd13c/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/3cb6b785ba1f0a11aea00ae42836ee62/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/3cb6b785ba1f0a11aea00ae42836ee62/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/55c35c1c5467fa6912766dde83674216/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/55c35c1c5467fa6912766dde83674216/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/fa490330bac58faa14c18a87dd6eb5af/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/fa490330bac58faa14c18a87dd6eb5af/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c8393de459404bb30cbc84c5a1444e2a/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c8393de459404bb30cbc84c5a1444e2a/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/64f430808489d931bbfa529be9de8255/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/64f430808489d931bbfa529be9de8255/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/36d8d29d9c54daf2e1360dc1baf6cea0/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/36d8d29d9c54daf2e1360dc1baf6cea0/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b7c46822fcdca9270fc3416ae86459f/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5b7c46822fcdca9270fc3416ae86459f/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/265681d88d51677160c8467c604eb1f8/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/265681d88d51677160c8467c604eb1f8/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/9c4aea3bfbbbefd31ad2d70f88836526/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/9c4aea3bfbbbefd31ad2d70f88836526/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/16d5b33de703c691590baee6ffa11e2b/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/16d5b33de703c691590baee6ffa11e2b/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/783cb1450d7cf79abf5159e390167ce3/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/783cb1450d7cf79abf5159e390167ce3/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/2b1e1ab9f9c71ab55c777735bd96c18e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/2b1e1ab9f9c71ab55c777735bd96c18e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/84533c09f17d787063b893b0824fb0a7/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/84533c09f17d787063b893b0824fb0a7/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/17df2a074037210a4362c3b5a39ab403/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/17df2a074037210a4362c3b5a39ab403/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c97f4701bc0b9a238dae9d218626ea1b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c97f4701bc0b9a238dae9d218626ea1b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/23f5682709187a2f348a5bbcad97f0ed/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/23f5682709187a2f348a5bbcad97f0ed/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/60917451e62cebbd3017652339de0d20/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/60917451e62cebbd3017652339de0d20/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/485b1c76617eb6e0cda217fb644a9c7c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/485b1c76617eb6e0cda217fb644a9c7c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5fca54221f375bc09ee5afc10b11f5c2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/5fca54221f375bc09ee5afc10b11f5c2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c905ed89dd4797141b5793e7bef1306b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c905ed89dd4797141b5793e7bef1306b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/2a75b08938ad4d59d29d7a5f9d6ea469/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/2a75b08938ad4d59d29d7a5f9d6ea469/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ricardonoguti/Documents/Projetos/CamHub/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d78dba3c6e4644f16858f3dd7cfb3e9c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/c6874d7e264ead67000fbbe18dd7946b/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.camhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.camhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/955369e4c0c2c1e5eefeb096424c1cb7/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/d293be84840a7e973715d9543913e153/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/ricardonoguti/.gradle/caches/8.13/transforms/b3ef686127d17a76c32df57cf4666ebc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
