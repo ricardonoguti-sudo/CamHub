@@ -3,6 +3,7 @@ package com.camhub
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -12,6 +13,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.camhub.databinding.ActivityMainBinding
+import com.camhub.databinding.ViewCameraCellBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -47,6 +49,14 @@ class MainActivity : AppCompatActivity() {
     // slotToCamera[slotIdx] = cameraIdx
     // slot 0 = main, slots 1–4 = side panels
     private val slotToCamera = intArrayOf(0, 1, 2, 3, 4)
+
+    // ── Klipper online state ──────────────────────────────────────────────────
+    // Starts true so first offline detection triggers the layout switch
+    private var klipperOnline = true
+
+    // ── Grid expand state ─────────────────────────────────────────────────────
+    // Index of camera currently expanded in grid mode (-1 = none)
+    private var expandedGridCamIndex = -1
 
     companion object {
         private const val KLIPPER_INDEX = 4
@@ -107,6 +117,7 @@ class MainActivity : AppCompatActivity() {
             settingsLauncher.launch(Intent(this, SettingsActivity::class.java))
         }
         binding.btnPower.setOnClickListener { confirmShutdown() }
+        binding.klipperReloadBtn.setOnClickListener { mjpegPlayer.restart() }
 
         // Side slot tap → swap to main
         listOf(binding.sideSlot1, binding.sideSlot2,
@@ -169,13 +180,19 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..3) {
             val camIdx = i
             rtspPlayers[i].onStatusChanged = { status ->
-                val slotIdx = slotToCamera.indexOf(camIdx)
-                updateRtspSlotStatus(slotIdx, status)
+                if (klipperOnline) {
+                    val slotIdx = slotToCamera.indexOf(camIdx)
+                    updateRtspSlotStatus(slotIdx, status)
+                } else {
+                    updateRtspGridSlotStatus(camIdx, status)
+                }
             }
         }
         mjpegPlayer.onStatusChanged = { status ->
-            val slotIdx = slotToCamera.indexOf(KLIPPER_INDEX)
-            updateMjpegSlotStatus(slotIdx, status)
+            if (klipperOnline) {
+                val slotIdx = slotToCamera.indexOf(KLIPPER_INDEX)
+                updateMjpegSlotStatus(slotIdx, status)
+            }
         }
     }
 
@@ -275,6 +292,7 @@ class MainActivity : AppCompatActivity() {
         if (camIdx < KLIPPER_INDEX) {
             val player = rtspPlayers[camIdx]
             binding.mainControlsBar.visibility = View.VISIBLE
+            binding.mainMuteButton.visibility = View.VISIBLE
             updateMuteIcon(player.isMuted)
             binding.mainMuteButton.setOnClickListener {
                 updateMuteIcon(player.toggleMute())
@@ -283,6 +301,7 @@ class MainActivity : AppCompatActivity() {
                 player.reload()
             }
         } else {
+            // Klipper: reload is in the stats bar, hide the controls bar
             binding.mainControlsBar.visibility = View.GONE
         }
     }
@@ -297,7 +316,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateKlipperSpecificUI() {
         val klipperIsMain = slotToCamera[0] == KLIPPER_INDEX
-        binding.btnPower.visibility = if (klipperIsMain) View.VISIBLE else View.GONE
         if (!klipperIsMain) {
             binding.klipperStatsBar.visibility = View.GONE
             binding.klipperProgressBar.visibility = View.GONE
@@ -312,10 +330,175 @@ class MainActivity : AppCompatActivity() {
             while (true) {
                 val client = moonrakerClient ?: break
                 val info = withContext(Dispatchers.IO) { client.getPrintInfo() }
-                // Only update UI if Klipper is in the main slot
-                if (slotToCamera[0] == KLIPPER_INDEX) updateStatsUI(info)
+                val nowOnline = info != null
+                if (nowOnline != klipperOnline) {
+                    klipperOnline = nowOnline
+                    onKlipperOnlineChanged(nowOnline)
+                }
+                if (nowOnline && slotToCamera[0] == KLIPPER_INDEX) updateStatsUI(info)
                 delay(3000)
             }
+        }
+    }
+
+    private fun onKlipperOnlineChanged(online: Boolean) {
+        if (online) {
+            // Collapse any expanded grid camera first
+            collapseGridCamera()
+
+            // Restore dashboard layout
+            binding.gridLayout.visibility = View.GONE
+            binding.mainSlot.visibility = View.VISIBLE
+            binding.sidePanel.visibility = View.VISIBLE
+
+            // Reattach RTSP players to their dashboard slots
+            for (camIdx in 0..3) {
+                val slotIdx = slotToCamera.indexOf(camIdx)
+                if (slotIdx >= 0) attachCameraToSlot(camIdx, slotIdx)
+            }
+
+            // Restart Klipper MJPEG stream and reattach to its slot
+            val klipperSlotIdx = slotToCamera.indexOf(KLIPPER_INDEX)
+            if (klipperSlotIdx >= 0) {
+                val slot = allSlots[klipperSlotIdx]
+                slot.vlcLayout.visibility = View.GONE
+                slot.imageView.visibility = View.VISIBLE
+                mjpegPlayer.attachToImageView(slot.imageView)
+                mjpegPlayer.restart()
+            }
+
+            updateMainSlotControls(slotToCamera[0])
+            updateKlipperSpecificUI()
+        } else {
+            // Switch to 4-camera grid
+            binding.mainSlot.visibility = View.GONE
+            binding.sidePanel.visibility = View.GONE
+            binding.gridLayout.visibility = View.VISIBLE
+            binding.klipperStatsBar.visibility = View.GONE
+            binding.klipperProgressBar.visibility = View.GONE
+
+            // Attach RTSP players 0-3 to grid cells, wire up controls
+            for (i in 0..3) {
+                val cell = getGridCellBinding(i)
+                val player = rtspPlayers[i]
+                cell.cameraName.text = player.cameraName
+                player.attachToLayout(cell.videoLayout)
+                updateGridCellStatus(cell, player.lastStatus)
+                cell.muteButton.setImageResource(
+                    if (player.isMuted) R.drawable.ic_volume_off else R.drawable.ic_volume_up
+                )
+                cell.muteButton.setOnClickListener {
+                    val muted = player.toggleMute()
+                    cell.muteButton.setImageResource(
+                        if (muted) R.drawable.ic_volume_off else R.drawable.ic_volume_up
+                    )
+                }
+                cell.reloadButton.setOnClickListener { player.reload() }
+            }
+
+            // Wire tap on cell containers to expand
+            listOf(
+                binding.gridCell1Container, binding.gridCell2Container,
+                binding.gridCell3Container, binding.gridCell4Container
+            ).forEachIndexed { i, container ->
+                container.setOnClickListener { expandGridCamera(i) }
+            }
+
+            // Wire close button
+            binding.gridCloseButton.setOnClickListener { collapseGridCamera() }
+        }
+    }
+
+    // ── Grid expand / collapse ────────────────────────────────────────────────
+
+    private fun expandGridCamera(index: Int) {
+        if (expandedGridCamIndex == index) return
+
+        // If another camera was expanded, reattach it to its grid cell first
+        if (expandedGridCamIndex >= 0) {
+            rtspPlayers[expandedGridCamIndex].attachToLayout(
+                getGridCellBinding(expandedGridCamIndex).videoLayout
+            )
+        }
+
+        expandedGridCamIndex = index
+        val player = rtspPlayers[index]
+        val expanded = binding.gridExpanded
+
+        expanded.cameraName.text = player.cameraName
+        updateGridCellStatus(expanded, player.lastStatus)
+        expanded.muteButton.setImageResource(
+            if (player.isMuted) R.drawable.ic_volume_off else R.drawable.ic_volume_up
+        )
+        expanded.muteButton.setOnClickListener {
+            val muted = player.toggleMute()
+            expanded.muteButton.setImageResource(
+                if (muted) R.drawable.ic_volume_off else R.drawable.ic_volume_up
+            )
+        }
+        expanded.reloadButton.setOnClickListener { player.reload() }
+
+        // Make the container visible first so the SurfaceView inside VLCVideoLayout
+        // gets created, then attach the player after the layout pass.
+        binding.gridExpandedContainer.visibility = View.VISIBLE
+        expanded.videoLayout.post { player.attachToLayout(expanded.videoLayout) }
+    }
+
+    private fun collapseGridCamera() {
+        if (expandedGridCamIndex < 0) return
+        rtspPlayers[expandedGridCamIndex].attachToLayout(
+            getGridCellBinding(expandedGridCamIndex).videoLayout
+        )
+        expandedGridCamIndex = -1
+        binding.gridExpandedContainer.visibility = View.GONE
+    }
+
+    // ── Grid cell helpers ─────────────────────────────────────────────────────
+
+    private fun getGridCellBinding(index: Int): ViewCameraCellBinding = when (index) {
+        0 -> binding.gridCell1
+        1 -> binding.gridCell2
+        2 -> binding.gridCell3
+        else -> binding.gridCell4
+    }
+
+    private fun updateGridCellStatus(cell: ViewCameraCellBinding, status: RtspCameraPlayer.Status) {
+        when (status) {
+            RtspCameraPlayer.Status.PLAYING -> {
+                cell.statusOverlay.visibility = View.GONE
+            }
+            RtspCameraPlayer.Status.CONNECTING -> {
+                cell.progressBar.visibility = View.VISIBLE
+                cell.statusText.text = getString(R.string.status_connecting)
+                cell.statusText.setTextColor(Color.WHITE)
+                cell.statusOverlay.visibility = View.VISIBLE
+            }
+            RtspCameraPlayer.Status.BUFFERING -> {
+                cell.progressBar.visibility = View.VISIBLE
+                cell.statusText.text = getString(R.string.status_buffering)
+                cell.statusText.setTextColor(Color.YELLOW)
+                cell.statusOverlay.visibility = View.VISIBLE
+            }
+            RtspCameraPlayer.Status.ERROR -> {
+                cell.progressBar.visibility = View.GONE
+                cell.statusText.text = getString(R.string.status_error)
+                cell.statusText.setTextColor(Color.RED)
+                cell.statusOverlay.visibility = View.VISIBLE
+            }
+            RtspCameraPlayer.Status.STOPPED -> {
+                cell.progressBar.visibility = View.GONE
+                cell.statusText.text = getString(R.string.status_stopped)
+                cell.statusText.setTextColor(Color.WHITE)
+                cell.statusOverlay.visibility = View.VISIBLE
+            }
+        }
+    }
+
+    private fun updateRtspGridSlotStatus(gridSlotIdx: Int, status: RtspCameraPlayer.Status) {
+        if (klipperOnline) return
+        updateGridCellStatus(getGridCellBinding(gridSlotIdx), status)
+        if (expandedGridCamIndex == gridSlotIdx) {
+            updateGridCellStatus(binding.gridExpanded, status)
         }
     }
 
@@ -338,8 +521,6 @@ class MainActivity : AppCompatActivity() {
             else "--:--"
         binding.klipperRemainingText.text =
             if (info.estimatedRemaining > 0) formatTime(info.estimatedRemaining) else "--:--"
-        binding.klipperFilenameText.text = info.filename.substringAfterLast("/")
-
         binding.klipperProgressText.setTextColor(
             when (info.state) {
                 "paused"   -> 0xFFFFB74D.toInt()
@@ -389,8 +570,16 @@ class MainActivity : AppCompatActivity() {
         rtspPlayers.clear()
         mjpegPlayer.release()
 
-        // Reset to default slot assignments
+        // Reset to default slot assignments and assume online so first poll decides
         for (i in 0..4) slotToCamera[i] = i
+        klipperOnline = true
+        expandedGridCamIndex = -1
+        binding.gridExpandedContainer.visibility = View.GONE
+
+        // Restore dashboard layout visibility
+        binding.gridLayout.visibility = View.GONE
+        binding.mainSlot.visibility = View.VISIBLE
+        binding.sidePanel.visibility = View.VISIBLE
 
         // Reset all slot views
         allSlots.forEach { slot ->

@@ -80,6 +80,11 @@ class MjpegCameraPlayer(
         onStatusChanged?.invoke(status)
     }
 
+    /** Restarts the stream (e.g. after the Klipper host came back online). */
+    fun restart() {
+        startStream()
+    }
+
     fun release() {
         streamJob?.cancel()
         targetImageView = null

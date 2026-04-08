@@ -469,30 +469,34 @@
             <View android:layout_width="1dp" android:layout_height="32dp"
                 android:background="#444444" android:layout_marginHorizontal="8dp" />
 
-            <!-- Filename -->
+            <!-- Shutdown + Reload buttons -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:orientation="vertical"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ARQUIVO"
-                    android:textColor="#AAAAAA"
-                    android:textSize="9sp"
-                    android:letterSpacing="0.1" />
-                <TextView
-                    android:id="@+id/klipperFilenameText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#CCCCCC"
-                    android:textSize="11sp"
-                    android:singleLine="true"
-                    android:ellipsize="end"
-                    android:gravity="center"
-                    android:text="" />
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+
+                <ImageButton
+                    android:id="@+id/btnPower"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_button_circle"
+                    android:src="@drawable/ic_power"
+                    android:tint="#EF5350"
+                    android:contentDescription="@string/shutdown_klipper" />
+
+                <ImageButton
+                    android:id="@+id/klipperReloadBtn"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_button_circle"
+                    android:src="@drawable/ic_refresh"
+                    android:tint="#FFFFFF"
+                    android:contentDescription="@string/reload" />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -511,6 +515,139 @@
     </FrameLayout>
 
     <!-- ═══════════════════════════════════════════════════════════════════════
+         4-CAMERA GRID — shown when Klipper is offline (2 × 2)
+    ═══════════════════════════════════════════════════════════════════════════ -->
+    <FrameLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 2×2 grid of cameras -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/gridCell1Container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <include
+                        android:id="@+id/gridCell1"
+                        layout="@layout/view_camera_cell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/gridCell2Container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <include
+                        android:id="@+id/gridCell2"
+                        layout="@layout/view_camera_cell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/gridCell3Container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <include
+                        android:id="@+id/gridCell3"
+                        layout="@layout/view_camera_cell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/gridCell4Container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <include
+                        android:id="@+id/gridCell4"
+                        layout="@layout/view_camera_cell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Expanded single-camera overlay -->
+        <FrameLayout
+            android:id="@+id/gridExpandedContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/gridExpanded"
+                layout="@layout/view_camera_cell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/gridCloseButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_button_circle"
+                android:src="@drawable/ic_close"
+                android:tint="#FFFFFF"
+                android:contentDescription="@string/close" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
          GLOBAL BUTTONS — always on top-right of the full screen
     ═══════════════════════════════════════════════════════════════════════════ -->
     <LinearLayout
@@ -520,18 +657,6 @@
         android:layout_margin="8dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
-        <!-- Power button: shown only when Klipper is in the main slot -->
-        <ImageButton
-            android:id="@+id/btnPower"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="6dp"
-            android:background="@drawable/bg_button_circle"
-            android:src="@drawable/ic_power"
-            android:tint="#FFFFFF"
-            android:visibility="gone"
-            android:contentDescription="@string/shutdown_klipper" />
 
         <!-- Settings button: always visible -->
         <ImageButton
